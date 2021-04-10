@@ -2,4 +2,5 @@ language: python
 install:
   - make deps
 script:
+  - mke lint
   - make test
