@@ -34,6 +34,6 @@ class FlaskrTestCase(unittest.TestCase):
 
         # Wczytanie XMLa z aplikacji
         rv = self.app.get('/?output=xml')
-        
+
         # Test
         self.assertEqual(test_xml, rv.data)
