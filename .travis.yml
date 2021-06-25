@@ -1,13 +1,13 @@
 language: python
 services:
-- docker
+  - docker
 install:
-- make deps
+  - make deps
 script:
-- make lint
-- make test
-- make docker_build
-- make docker_push
+  - make lint
+  - make test
+  - make docker_build
+  - make docker_push
 deploy:
   provider: heroku
   app: stark-dawn-73637
