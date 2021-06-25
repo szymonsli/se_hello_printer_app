@@ -16,7 +16,7 @@ class FlaskrTestCase(unittest.TestCase):
         ','.join(SUPPORTED) in s
 
     def test_msg_with_output(self):
-        test_data = {"imie": "Szymon", "msg": "Hello World!"}
+        test_data = {"imie": "Simon", "msg": "Hello World!"}
         rv = self.app.get('/?output=json')
         js = json.loads(rv.data)
         self.assertEqual(test_data['msg'], js['msg'])
@@ -26,7 +26,7 @@ class FlaskrTestCase(unittest.TestCase):
         # Tworzenie XML
         greetings = ET.Element("greetings")
         name = ET.SubElement(greetings, "imie")
-        name.text = "Szymon"
+        name.text = "Simon"
         message = ET.SubElement(greetings, "msg")
         message.text = "Hello World!"
 
