@@ -10,10 +10,10 @@ test:
 	PYTHONPATH=. py.test
 	PYTHONPATH=. py.test --verbose -s
 
-test-cov:
+test_cov:
 	PYTHONPATH=. py.test --verbose -s --cov=hello_world --cov-report term-missing
 
-test-xunit:
+test_xunit:
 	PYTHONPATH=. py.test -s --cov=. --cov-report xml --junit-xml=test_results.xml
 
 lint:
