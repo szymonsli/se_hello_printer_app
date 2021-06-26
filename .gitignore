@@ -1,5 +1,6 @@
 **/*.pyc
 .cache
 .venv
+venv
 .env
 .idea

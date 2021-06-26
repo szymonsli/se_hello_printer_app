@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/szymonsli/se_hello_printer_app.svg?branch=master)](https://travis-ci.com/szymonsli/se_hello_printer_app)
+[![Monitoring](https://app.statuscake.com/button/index.php?Track=6012049&Days=1&Design=3)](https://app.statuscake.com/UptimeStatus.php?tid=6012049)
 # Simple Flask App
 
 Aplikacja Dydaktyczna wyświetlająca imię i wiadomość w różnych formatach dla zajęć
@@ -42,19 +44,17 @@ o Continuous Integration, Continuous Delivery i Continuous Deployment.
   ```
   # deaktywacja
   $ deactivate
-  ```
-
-  ```
-  ...
-
+ 
   # aktywacja 
   $ source .venv/bin/activate
   ```
 
 - Integracja z TravisCI:
 
+  Aplikacja zintegrowana jest z [TravisCI](https://travis-ci.com/).
+  Polecenia dla Travisa wydawane są poprzez plik `.travis.yml`
   ```
-  # miejsce na twoje notatki
+  
   ```
 
 # Pomocnicze
