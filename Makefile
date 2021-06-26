@@ -10,6 +10,12 @@ test:
 	PYTHONPATH=. py.test
 	PYTHONPATH=. py.test --verbose -s
 
+test-cov:
+	PYTHONPATH=. py.test --verbose -s --cov=hello_world --cov-report term-missing
+
+test-xunit:
+	PYTHONPATH=. py.test -s --cov=. --cov-report xml --junit-xml=test_results.xml
+
 lint:
 	flake8 hello_world test
 
