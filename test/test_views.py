@@ -24,7 +24,7 @@ class FlaskrTestCase(unittest.TestCase):
 
     def test_msg_with_xml_output(self):
         # Tworzenie XML
-        greetings = ET.Element("greetings")
+        greetings = ET.Element("greeetings")
         name = ET.SubElement(greetings, "imie")
         name.text = "Simon"
         message = ET.SubElement(greetings, "msg")
