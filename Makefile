@@ -3,8 +3,8 @@ USERNAME=szymonsli
 TAG=$(USERNAME)/hello-world-printer
 
 deps:
-	pip3 install -r requirements.txt
-	pip3 install -r test_requirements.txt
+	pip install -r requirements.txt
+	pip install -r test_requirements.txt
 
 test:
 	PYTHONPATH=. py.test
